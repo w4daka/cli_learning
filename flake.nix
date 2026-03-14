@@ -1,5 +1,5 @@
 {
-  description = "wc dev environment";
+  description = "cli learning dev environment";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -27,6 +27,7 @@
             rust-analyzer
             clippy
             rustfmt
+            rustPlatform.rustLibSrc
 
             # CLI tools
             just
@@ -34,9 +35,6 @@
             # Docs
             mdbook
 
-            #markdown
-            markdown-toc
-            markdownlint-cli2
             # Diagram
             mermaid-cli
 
